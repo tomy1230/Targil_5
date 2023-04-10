@@ -1,5 +1,5 @@
 import requests
-
+number=1
 
 def First_name():
     response = requests.get('https://randomuser.me/api/').json()
@@ -18,7 +18,7 @@ def User_value_run(number1):
         print("Enter number greater then 0!!!")
 
 
-number=1
+
 while number != -1: # until the user enters '-1' 
     number = int(input('Enter number between 1 - 100(enter -1 to quit):\n'))  #user input
     User_value_run(number) # send number to the class
